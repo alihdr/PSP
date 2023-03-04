@@ -175,7 +175,7 @@ int main() {
 
     time_t last_time = time(NULL);
     time_t current_time;
-    int interval = 15; // two minutes in seconds
+    int interval = 120;
 
     // Receive data from client
     while ((recv_len = recv(new_socket, buffer, BUFFER_SIZE, 0)) != SOCKET_ERROR) {
